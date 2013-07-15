@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Border Layout space - jQuery EasyUI Demo</title>
+    <link rel="stylesheet" type="text/css" href="style/themes/gray/easyui.css"/>
+    <script type="text/javascript" src="style/js/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="style/js/jquery.min.js"></script>
+    <!--	<script type="text/javascript" src="../../jquery.easyui.extend.js"></script>-->
+    <script type="text/javascript">
+        function hidden() {
+            var region = $("#cc1").combobox('getValue');
+            if (region == "all") {
+                $('#subLayout').layout('hidden', 'north');
+                $('#subLayout').layout('hidden', 'east');
+                $('#subLayout').layout('hidden', 'south');
+                $('#subLayout').layout('hidden', 'west');
+            } else {
+                $('#subLayout').layout('hidden', region);
+            }
+        }
+        function show() {
+            var region = $("#cc2").combobox('getValue');
+            if (region == "all") {
+                $('#subLayout').layout('show', 'north');
+                $('#subLayout').layout('show', 'east');
+                $('#subLayout').layout('show', 'south');
+                $('#subLayout').layout('show', 'west');
+            } else {
+                $('#subLayout').layout('show', region);
+            }
+        }
+        $(function () {
+            /*
+			var p = $('body').layout('panel','west').panel({
+				onCollapse:function(){
+					alert('collapse');
+				}
+			});
+			
+			setTimeout(function(){
+				$('body').layout('collapse','east');
+			},0);
+			*/
+        });
+    </script>
+</head>
+<body class="easyui-layout">
+    <div region="north" title="north" border="true" split="true" style="height: 70px; padding: 5px;">
+        <select id="cc1" class="easyui-combobox" name="state" style="width: 100px;">
+            <option value="west">west</option>
+            <option value="east">east</option>
+            <option value="north">north</option>
+            <option value="south">south</option>
+            <option value="all">all</option>
+        </select>
+        <a href="#" class="easyui-linkbutton" plain="false" style="margin-right: 100px;" onclick="javascript:hidden()">隐藏:</a>
+        <select id="cc2" class="easyui-combobox" name="state" style="width: 100px;">
+            <option value="west">west</option>
+            <option value="east">east</option>
+            <option value="north">north</option>
+            <option value="south">south</option>
+            <option value="all">all</option>
+        </select>
+        <a href="#" class="easyui-linkbutton" plain="false" onclick="javascript:show()">显示:</a>
+    </div>
+    <div region="west" split="true" title="West" style="width: 150px; padding: 10px;">west content</div>
+    <div region="east" split="true" title="East" style="width: 100px; padding: 10px;">east region</div>
+    <div region="south" border="true" split="true" title="south" style="height: 50px; background: #A9FACD; padding: 10px;">south region</div>
+    <div region="center" border="false" split="true">
+       <!-- <div class="easyui-layout" fit="true" id="subLayout">
+            <div region="north" title="north" border="true" split="true" style="height: 100px; background: #B3DFDA; padding: 10px">
+            </div>
+            <div region="west" split="true" title="sub West" style="width: 150px; padding: 10px;">sub west content</div>
+            <div region="east" split="true" title="sub East" style="width: 100px; padding: 10px;">sub east region</div>
+            <div region="south" border="true" split="true" title="sub south" style="height: 100px; background: #A9FACD; padding: 10px;">sub south region</div>
+            <div region="center" title="sub Main  Title" border="true" split="true">
+            </div>-->
+        </div>
+</body>
+</html>

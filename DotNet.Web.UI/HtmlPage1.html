@@ -1,0 +1,37 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Complex Layout - jQuery EasyUI Demo</title>
+    
+    <link rel="stylesheet" type="text/css" href="style/themes/gray/easyui.css">
+    <link rel="stylesheet" type="text/css" href="style/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="demo.css">
+    <script type="text/javascript" src="style/js/jquery.min.js"></script>
+    <script type="text/javascript" src="style/js/jquery.easyui.min.js"></script>
+    <script>
+        $(function () {
+            cover();
+            $(window).resize(function () { //浏览器窗口变更 
+                cover();
+            });
+        });
+        function cover() {
+            var win_width = $(window).width();
+            $("＃subWrap").layout("panel", "east").panel("esize", { width: win_width / 3 });
+            $("＃subWrap").layout("resize");
+        }
+    </script>
+</head>
+<body>
+    <div id="subWrap" class="easyui-layout" fit="true">
+        <div data-options="region:""north""" style="height:50px"></div>
+        <div data-options="region:""south"",split:true" style="height:50px;"></div>
+        <div data-options="region:""east"",split:true" title="East" ></div>
+        <div data-options="region:""west"",split:true" title="West" style="width:180px;" ></div>
+        <div data-options="region:""center"",title:""Main Title"",iconCls:""icon-ok"",fit:true"></div>
+    </div>
+</body>
+</html>
+

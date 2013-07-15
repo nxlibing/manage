@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AAB23D84-C2F8-4D00-B6CD-8600016CA026}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DotNet.Web.UI</RootNamespace>
+    <AssemblyName>DotNet.Web.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="complex.html" />
+    <Content Include="demo.css" />
+    <Content Include="HtmlPage1.html" />
+    <Content Include="index.aspx" />
+    <Content Include="plugins\jquery.accordion.js" />
+    <Content Include="plugins\jquery.calendar.js" />
+    <Content Include="plugins\jquery.combo.js" />
+    <Content Include="plugins\jquery.combobox.js" />
+    <Content Include="plugins\jquery.combogrid.js" />
+    <Content Include="plugins\jquery.combotree.js" />
+    <Content Include="plugins\jquery.datagrid.js" />
+    <Content Include="plugins\jquery.datebox.js" />
+    <Content Include="plugins\jquery.datetimebox.js" />
+    <Content Include="plugins\jquery.dialog.js" />
+    <Content Include="plugins\jquery.draggable.js" />
+    <Content Include="plugins\jquery.droppable.js" />
+    <Content Include="plugins\jquery.form.js" />
+    <Content Include="plugins\jquery.layout.js" />
+    <Content Include="plugins\jquery.linkbutton.js" />
+    <Content Include="plugins\jquery.menu.js" />
+    <Content Include="plugins\jquery.menubutton.js" />
+    <Content Include="plugins\jquery.messager.js" />
+    <Content Include="plugins\jquery.numberbox.js" />
+    <Content Include="plugins\jquery.numberspinner.js" />
+    <Content Include="plugins\jquery.pagination.js" />
+    <Content Include="plugins\jquery.panel.js" />
+    <Content Include="plugins\jquery.parser.js" />
+    <Content Include="plugins\jquery.progressbar.js" />
+    <Content Include="plugins\jquery.propertygrid.js" />
+    <Content Include="plugins\jquery.resizable.js" />
+    <Content Include="plugins\jquery.searchbox.js" />
+    <Content Include="plugins\jquery.slider.js" />
+    <Content Include="plugins\jquery.spinner.js" />
+    <Content Include="plugins\jquery.splitbutton.js" />
+    <Content Include="plugins\jquery.tabs.js" />
+    <Content Include="plugins\jquery.timespinner.js" />
+    <Content Include="plugins\jquery.tooltip.js" />
+    <Content Include="plugins\jquery.tree.js" />
+    <Content Include="plugins\jquery.treegrid.js" />
+    <Content Include="plugins\jquery.validatebox.js" />
+    <Content Include="plugins\jquery.window.js" />
+    <Content Include="style\js\easyloader.js" />
+    <Content Include="style\js\jquery.easyui.min.js" />
+    <Content Include="style\js\jquery.min.js" />
+    <Content Include="style\themes\gray\accordion.css" />
+    <Content Include="style\themes\gray\calendar.css" />
+    <Content Include="style\themes\gray\combo.css" />
+    <Content Include="style\themes\gray\combobox.css" />
+    <Content Include="style\themes\gray\datagrid.css" />
+    <Content Include="style\themes\gray\datebox.css" />
+    <Content Include="style\themes\gray\dialog.css" />
+    <Content Include="style\themes\gray\easyui.css" />
+    <Content Include="style\themes\gray\images\accordion_arrows.png" />
+    <Content Include="style\themes\gray\images\blank.gif" />
+    <Content Include="style\themes\gray\images\calendar_arrows.png" />
+    <Content Include="style\themes\gray\images\combo_arrow.png" />
+    <Content Include="style\themes\gray\images\datagrid_icons.png" />
+    <Content Include="style\themes\gray\images\datebox_arrow.png" />
+    <Content Include="style\themes\gray\images\layout_arrows.png" />
+    <Content Include="style\themes\gray\images\linkbutton_bg.png" />
+    <Content Include="style\themes\gray\images\loading.gif" />
+    <Content Include="style\themes\gray\images\menu_arrows.png" />
+    <Content Include="style\themes\gray\images\messager_icons.png" />
+    <Content Include="style\themes\gray\images\pagination_icons.png" />
+    <Content Include="style\themes\gray\images\panel_tools.png" />
+    <Content Include="style\themes\gray\images\searchbox_button.png" />
+    <Content Include="style\themes\gray\images\slider_handle.png" />
+    <Content Include="style\themes\gray\images\spinner_arrows.png" />
+    <Content Include="style\themes\gray\images\tabs_icons.png" />
+    <Content Include="style\themes\gray\images\tree_icons.png" />
+    <Content Include="style\themes\gray\images\validatebox_warning.png" />
+    <Content Include="style\themes\gray\layout.css" />
+    <Content Include="style\themes\gray\linkbutton.css" />
+    <Content Include="style\themes\gray\menu.css" />
+    <Content Include="style\themes\gray\menubutton.css" />
+    <Content Include="style\themes\gray\messager.css" />
+    <Content Include="style\themes\gray\pagination.css" />
+    <Content Include="style\themes\gray\panel.css" />
+    <Content Include="style\themes\gray\progressbar.css" />
+    <Content Include="style\themes\gray\propertygrid.css" />
+    <Content Include="style\themes\gray\searchbox.css" />
+    <Content Include="style\themes\gray\slider.css" />
+    <Content Include="style\themes\gray\spinner.css" />
+    <Content Include="style\themes\gray\splitbutton.css" />
+    <Content Include="style\themes\gray\tabs.css" />
+    <Content Include="style\themes\gray\tooltip.css" />
+    <Content Include="style\themes\gray\tree.css" />
+    <Content Include="style\themes\gray\validatebox.css" />
+    <Content Include="style\themes\gray\window.css" />
+    <Content Include="style\themes\icon.css" />
+    <Content Include="style\themes\icons\back.png" />
+    <Content Include="style\themes\icons\blank.gif" />
+    <Content Include="style\themes\icons\cancel.png" />
+    <Content Include="style\themes\icons\cut.png" />
+    <Content Include="style\themes\icons\edit_add.png" />
+    <Content Include="style\themes\icons\edit_remove.png" />
+    <Content Include="style\themes\icons\filesave.png" />
+    <Content Include="style\themes\icons\help.png" />
+    <Content Include="style\themes\icons\mini_add.png" />
+    <Content Include="style\themes\icons\mini_edit.png" />
+    <Content Include="style\themes\icons\mini_refresh.png" />
+    <Content Include="style\themes\icons\no.png" />
+    <Content Include="style\themes\icons\ok.png" />
+    <Content Include="style\themes\icons\pencil.png" />
+    <Content Include="style\themes\icons\print.png" />
+    <Content Include="style\themes\icons\redo.png" />
+    <Content Include="style\themes\icons\reload.png" />
+    <Content Include="style\themes\icons\search.png" />
+    <Content Include="style\themes\icons\sum.png" />
+    <Content Include="style\themes\icons\tip.png" />
+    <Content Include="style\themes\icons\undo.png" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="style\themes\gray\images\Thumbs.db" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="style\css\" />
+    <Folder Include="style\images\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:62439/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
